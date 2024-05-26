@@ -1,4 +1,7 @@
 package com.devdroid.onboarding.model
 
-class Question {
-}
+data class Question (
+
+    val question: String,
+            val inputType: String
+)
