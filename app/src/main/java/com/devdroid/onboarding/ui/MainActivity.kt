@@ -1,4 +1,4 @@
-package com.devdroid.onboarding
+package com.devdroid.onboarding.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
