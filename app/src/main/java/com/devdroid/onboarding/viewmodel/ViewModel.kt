@@ -16,5 +16,17 @@ class ViewModel(private val repository: QuestionRepository) : ViewModel() {
 
     private val _answers = MutableLiveData<MutableMap<Question,String>>()
 
+    val answers: LiveData<MutableMap<Question, String>> get() = _answers
 
+    init{
+        _questions.value = repository.loadQuestion()
+        _currentIndex.value = 0
+        _answers.value = mutableMapOf()
+    }
+
+    fun nextQuesiton(answer: String){
+        val currentQuestion =_questions.value?.get(_currentIndex.value!!)?: return
+        _answers.value?.put(currentQuestion,answer)
+        _currentIndex.value = _currentIndex.value?.plus(1)
+    }
 }
