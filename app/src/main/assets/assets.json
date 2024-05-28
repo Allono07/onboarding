@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is your name?",
+    "inputType": "text"
+  },
+  {
+    "question": "How old are you?",
+    "inputType": "number"
+  },
+  {
+    "question": "What is your email address?",
+    "inputType": "textEmailAddress"
+  },
+  {
+    "question": "What is your Phone Number?",
+    "inputType": "text"
+  },
+  {
+    "question": "What is your address?",
+    "inputType": "text"
+  }
+]

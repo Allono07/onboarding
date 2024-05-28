@@ -4,12 +4,12 @@
 <data>
     <variable
         name="viewModel"
-        type="com.devdroid.onboarding.viewmodel.ViewModel" />
+        type="com.devdroid.onboarding.viewmodel.MainViewModel" />
 </data>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D6E4F"
+        android:background="#D6E4F0"
         android:orientation="vertical"
         android:padding="16dp">
 
